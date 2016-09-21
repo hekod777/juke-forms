@@ -5,5 +5,12 @@ juke.config(function($stateProvider) {
     url: '/playlists/new',
     templateUrl: '/js/playlist/templates/playlist-form.html',
     controller: 'newPlaylist'
-  });
+  })
+  .state('playlist',{
+  	url:'/playlist/:id',
+  	templateUrl:'/js/playlist/templates/playlist.html',
+  	controller:'playlistCtrl',
+  })
+
+
 });
